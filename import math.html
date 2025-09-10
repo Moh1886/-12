@@ -1,0 +1,166 @@
+<style>body {background: white}</style><?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Untitled</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="CoolUtils HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #FFFFFF; }
+.python1-classname { color: #000080; font-weight: bold; }
+.python1-comment { color: #808080; font-style: italic; }
+.python1-commentedcode { color: #C0C0C0; font-style: italic; }
+.python1-documentation { color: #CC00FF; }
+.python1-float { color: #008080; }
+.python1-functionname { color: #008080; font-weight: bold; }
+.python1-hexadecimal { color: #008080; }
+.python1-identifier { color: #000000; }
+.python1-matchingbrace { color: #0000FF; font-weight: bold; }
+.python1-multi-linestring { color: #808000; }
+.python1-nonreservedkeyword { color: #000080; }
+.python1-number { color: #008080; }
+.python1-octal { color: #008080; }
+.python1-reservedword { font-weight: bold; }
+.python1-space { color: #C0C0C0; }
+.python1-string { color: #808000; }
+.python1-symbol { color: #800000; }
+.python1-syntaxerror { color: #FF0000; }
+.python1-systemfunctionsandvariables { font-weight: bold; }
+.python1-unbalancedbrace { color: #FFFF00; }
+-->
+</style>
+</head>
+<body>
+<!--StartFragment--><pre><code><span class="python1-reservedword">import</span><span class="python1-space"> </span><span class="python1-identifier">math
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">add</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">+</span><span class="python1-space"> </span><span class="python1-identifier">y
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">subtract</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">-</span><span class="python1-space"> </span><span class="python1-identifier">y
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">multiply</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">*</span><span class="python1-space"> </span><span class="python1-identifier">y
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">divide</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-number">0</span><span class="python1-symbol">:
+</span><span class="python1-space">        </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-string">&quot;Ш®Ш·ШЈ: Ш§Щ„Щ‚ШіЩ…Ш© Ш№Щ„Щ‰ ШµЩЃШ± ШєЩЉШ± Щ…Ш№Ш±ЩЃШ©&quot;
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">/</span><span class="python1-space"> </span><span class="python1-identifier">y
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">power</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">y</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">**</span><span class="python1-space"> </span><span class="python1-identifier">y
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">sqrt</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">&lt;</span><span class="python1-space"> </span><span class="python1-number">0</span><span class="python1-symbol">:
+</span><span class="python1-space">        </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-string">&quot;Ш®Ш·ШЈ: Щ„Ш§ ЩЉЩ…ЩѓЩ† Ш­ШіШ§ШЁ Ш§Щ„Ш¬Ш°Ш± Ш§Щ„ШЄШ±ШЁЩЉШ№ЩЉ Щ„Ш№ШЇШЇ ШіШ§Щ„ШЁ&quot;
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">sqrt</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">)
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">logarithm</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">base</span><span class="python1-symbol">=</span><span class="python1-number">10</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">x</span><span class="python1-space"> </span><span class="python1-symbol">&lt;=</span><span class="python1-space"> </span><span class="python1-number">0</span><span class="python1-symbol">:
+</span><span class="python1-space">        </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-string">&quot;Ш®Ш·ШЈ: Ш§Щ„Щ„Щ€ШєШ§Ш±ЩЉШЄЩ… ШєЩЉШ± Щ…Ш№Ш±ЩЃ Щ„Щ„ШЈШ№ШЇШ§ШЇ ШµЩЃШ± ШЈЩ€ ШіШ§Щ„ШЁШ©&quot;
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">log</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-identifier">base</span><span class="python1-symbol">)
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">sine</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">sin</span><span class="python1-symbol">(</span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">radians</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">))
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">cosine</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">cos</span><span class="python1-symbol">(</span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">radians</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">))
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">tangent</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">):
+</span><span class="python1-space">    </span><span class="python1-reservedword">return</span><span class="python1-space"> </span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">tan</span><span class="python1-symbol">(</span><span class="python1-identifier">math</span><span class="python1-symbol">.</span><span class="python1-identifier">radians</span><span class="python1-symbol">(</span><span class="python1-identifier">x</span><span class="python1-symbol">))
+
+</span><span class="python1-reservedword">def</span><span class="python1-space"> </span><span class="python1-functionname">calculator</span><span class="python1-symbol">():
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Щ…Ш±Ш­ШЁШ§Щ‹ ШЁЩѓ ЩЃЩЉ Ш§Щ„ШўЩ„Ш© Ш§Щ„Ш­Ш§ШіШЁШ© Ш§Щ„Щ…ШЄЩѓШ§Щ…Щ„Ш©&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш§Щ„Ш№Щ…Щ„ЩЉШ§ШЄ Ш§Щ„Щ…ШЄШ§Ш­Ш©:&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;1. Ш¬Щ…Ш№ (+)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;2. Ш·Ш±Ш­ (-)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;3. Ш¶Ш±ШЁ (*)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;4. Щ‚ШіЩ…Ш© (/)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;5. ШЈШі (^)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;6. Ш¬Ш°Ш± ШЄШ±ШЁЩЉШ№ЩЉ (sqrt)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;7. Щ„Щ€ШєШ§Ш±ЩЉШЄЩ… (log)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;8. Ш¬ЩЉШЁ (sin)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;9. Ш¬ЩЉШЁ ШЄЩ…Ш§Щ… (cos)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;10. ШёЩ„ (tan)&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">    </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;11. Ш®Ш±Щ€Ш¬&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">    </span><span class="python1-reservedword">while</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">True</span><span class="python1-symbol">:
+</span><span class="python1-space">        </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш§Ш®ШЄШ± Ш§Щ„Ш№Щ…Щ„ЩЉШ© (1-11): &quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'11'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШґЩѓШ±Ш§Щ‹ Щ„Ш§ШіШЄШ®ШЇШ§Щ…Щѓ Ш§Щ„ШўЩ„Ш© Ш§Щ„Ш­Ш§ШіШЁШ©. ШҐЩ„Щ‰ Ш§Щ„Щ„Щ‚Ш§ШЎ!&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">break
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-reservedword">in</span><span class="python1-space"> </span><span class="python1-symbol">[</span><span class="python1-string">'1'</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-string">'2'</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-string">'3'</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-string">'4'</span><span class="python1-symbol">,</span><span class="python1-space"> </span><span class="python1-string">'5'</span><span class="python1-symbol">]:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">num1</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„Ш±Щ‚Щ… Ш§Щ„ШЈЩ€Щ„: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">                </span><span class="python1-identifier">num2</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„Ш±Щ‚Щ… Ш§Щ„Ш«Ш§Щ†ЩЉ: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ ШЈШ±Щ‚Ш§Щ… ШµШ­ЩЉШ­Ш©.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+
+</span><span class="python1-space">            </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'1'</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {add(num1, num2)}&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'2'</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {subtract(num1, num2)}&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'3'</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {multiply(num1, num2)}&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'4'</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {divide(num1, num2)}&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'5'</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {power(num1, num2)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'6'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">num</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„Ш±Щ‚Щ…: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ Ш±Щ‚Щ… ШµШ­ЩЉШ­.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {sqrt(num)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'7'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">num</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„Ш±Щ‚Щ…: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">                </span><span class="python1-identifier">base</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„ШЈШіШ§Ші (Ш§ЩЃШЄШ±Ш§Ш¶ЩЉ 10): &quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-identifier">base</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">''</span><span class="python1-symbol">:
+</span><span class="python1-space">                    </span><span class="python1-identifier">base</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-number">10
+</span><span class="python1-space">                </span><span class="python1-reservedword">else</span><span class="python1-symbol">:
+</span><span class="python1-space">                    </span><span class="python1-identifier">base</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-identifier">base</span><span class="python1-symbol">)
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ ШЈШ±Щ‚Ш§Щ… ШµШ­ЩЉШ­Ш©.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {logarithm(num, base)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'8'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">angle</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„ШІШ§Щ€ЩЉШ© ШЁШ§Щ„ШЇШ±Ш¬Ш§ШЄ: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ Ш±Щ‚Щ… ШµШ­ЩЉШ­.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {sine(angle)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'9'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">angle</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„ШІШ§Щ€ЩЉШ© ШЁШ§Щ„ШЇШ±Ш¬Ш§ШЄ: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ Ш±Щ‚Щ… ШµШ­ЩЉШ­.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {cosine(angle)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">elif</span><span class="python1-space"> </span><span class="python1-identifier">choice</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">'10'</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">try</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-identifier">angle</span><span class="python1-space"> </span><span class="python1-symbol">=</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">float</span><span class="python1-symbol">(</span><span class="python1-nonreservedkeyword">input</span><span class="python1-symbol">(</span><span class="python1-string">&quot;ШЈШЇШ®Щ„ Ш§Щ„ШІШ§Щ€ЩЉШ© ШЁШ§Щ„ШЇШ±Ш¬Ш§ШЄ: &quot;</span><span class="python1-symbol">))
+</span><span class="python1-space">            </span><span class="python1-reservedword">except</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">ValueError</span><span class="python1-symbol">:
+</span><span class="python1-space">                </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш®Ш·ШЈ: ЩЉШ±Ш¬Щ‰ ШҐШЇШ®Ш§Щ„ Ш±Щ‚Щ… ШµШ­ЩЉШ­.&quot;</span><span class="python1-symbol">)
+</span><span class="python1-space">                </span><span class="python1-reservedword">continue
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-identifier">f</span><span class="python1-string">&quot;Ш§Щ„Щ†ШЄЩЉШ¬Ш©: {tangent(angle)}&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-space">        </span><span class="python1-reservedword">else</span><span class="python1-symbol">:
+</span><span class="python1-space">            </span><span class="python1-reservedword">print</span><span class="python1-symbol">(</span><span class="python1-string">&quot;Ш§Ш®ШЄЩЉШ§Ш± ШєЩЉШ± ШµШ­ЩЉШ­ШЊ ЩЉШ±Ш¬Щ‰ Ш§Щ„Щ…Ш­Ш§Щ€Щ„Ш© Щ…Ш±Ш© ШЈШ®Ш±Щ‰.&quot;</span><span class="python1-symbol">)
+
+</span><span class="python1-reservedword">if</span><span class="python1-space"> </span><span class="python1-nonreservedkeyword">__name__</span><span class="python1-space"> </span><span class="python1-symbol">==</span><span class="python1-space"> </span><span class="python1-string">&quot;__main__&quot;</span><span class="python1-symbol">:
+</span><span class="python1-space">    </span><span class="python1-identifier">calculator</span><span class="python1-symbol">()
+
+</span></code></pre><!--EndFragment--></body>
+</html>
